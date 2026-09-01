@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Sitemap URL
-Sitemap: https://github.com/BlauerTon/sitemap.xml
+# Sitemap
+Sitemap: https://sidneynduti.me/sitemap.xml
