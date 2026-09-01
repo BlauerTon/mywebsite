@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://blauerton.github.io/mywebsite/sitemap.xml
+Sitemap: https://sidneynduti.me/sitemap.xml
