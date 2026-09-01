@@ -1,0 +1,51 @@
+# Sidney Nduti
+
+Sidney Nduti is a software engineer and systems architect based in Nairobi, Kenya. He specializes in containerized system integrations, cybersecurity defensive infrastructure, automated API workflow pipelines, and responsive mobile/web applications.
+
+## Technical Skills
+- **Core Languages**: Python, Dart (Flutter), JavaScript, Bash, SQL, HTML5, CSS3.
+- **Tools & Frameworks**: n8n, Docker, Tailscale, Linux OS administration, Riverpod, Airtable, OpenRouter APIs.
+- **Specializations**: Security systems monitoring, network intrusion detection/prevention, automated lead queues, custom cron scripts.
+
+## Core Builds & Case Studies
+
+### 1. Intrusion Detection & Prevention Stack (IDPS)
+- **Role**: Systems Security Engineer
+- **Category**: Security / Infrastructure
+- **Stack**: Suricata, Linux, Docker, Tailscale, Bash
+- **Description**: Monitored network port anomalies using signature matching on a containerized Suricata stack. Created self-healing firewall exclusions to ban malicious IPs within 15 seconds, and used Tailscale nodes to lock admin console traffic.
+- **Outcome**: 100% of exploits stopped automatically.
+
+### 2. SwiftLead
+- **Role**: Automation Specialist
+- **Category**: Web Application / Automation
+- **Stack**: HTML5, CSS3, JSON-LD, Vite, Async JavaScript
+- **Description**: High-performance customer conversion and automation engine designed to eliminate the speed-to-lead response delay by offloading business logic to decoupled async backend pipelines.
+- **Outcome**: Lead response and automated acknowledgement latency reduced to < 1 minute.
+
+### 3. IoT-Based Home Automation System
+- **Role**: IoT Systems Engineer
+- **Category**: Mobile App / Enablement / IoT
+- **Stack**: Flutter, Dart, Arduino Uno R3, Bluetooth (HC-05), Firebase, Laravel, Android
+- **Description**: Smart home controller system linking a Flutter mobile dashboard to an Arduino hardware board via Bluetooth for local device control, power visualization, fire safety alerting, and Larvel administration.
+- **Outcome**: Response latency under 1 second, bringing unified environmental safety and accessibility offline.
+
+### 4. TOPWellness Africa Daily Journal
+- **Role**: Mobile App Engineer
+- **Category**: Mobile Application
+- **Stack**: Flutter, Riverpod, Dart, iOS/Android SDKs
+- **Description**: A wellness logging app utilizing Riverpod state providers. Optimizes multi-step slider/badge inputs and presents micro-animated recap charts.
+- **Outcome**: +42% daily reflection engagement.
+
+### 5. AI-Driven CV Tailoring Pipeline
+- **Role**: Automation Engineer
+- **Category**: Automation / Experiment
+- **Stack**: n8n, Airtable, OpenRouter API, NodeJS
+- **Description**: Workflow triggered by Airtable attachment hooks. Automates parsing candidates' CV text against targeted job posts and renders custom-tailored PDF files via LLMs in parallel.
+- **Outcome**: Generates custom tailored resumes in under 45 seconds.
+
+## Contact Channels
+- **Email**: sidneynduti@gmail.com
+- **GitHub**: https://github.com/BlauerTon
+- **LinkedIn**: https://www.linkedin.com/in/sidney-nduti/
+- **Location**: Nairobi, Kenya

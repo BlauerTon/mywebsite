@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Metadata -->
+  <title>Builds & Project Portfolio | Sidney Nduti</title>
+  <meta name="description"
+    content="Explore a curated gallery of custom software builds, automated n8n workflows, intrusion detection stacks, and mobile applications developed by Sidney Nduti.">
+  <meta name="keywords"
+    content="Portfolio, Software Engineer Nairobi, n8n Automation, Intrusion Detection, Cyber Security, Flutter, SwiftLead">
+  <meta name="author" content="Sidney Nduti">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Builds & Project Portfolio | Sidney Nduti">
+  <meta property="og:description"
+    content="Explore custom software builds, automated workflows, and network security stacks.">
+  <meta property="og:url" content="https://github.com/BlauerTon">
+
+  <!-- CSS Style Linking -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Global Header -->
+  <header id="global-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"
+        style="font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; letter-spacing: -0.01em;">
+        SIDNEY NDUTI
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="build.html" class="nav-link active">Builds</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <a href="contact.html" class="btn btn-secondary btn-talk-nav">Let's Talk</a>
+
+      <!-- Mobile Navigation Hamburger -->
+      <button id="mobile-menu-toggle" aria-label="Toggle Navigation" class="btn">
+        <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main style="margin-top: 80px;">
+
+    <!-- Intro Banner -->
+    <section class="section section-paper" style="padding-bottom: 32px;">
+      <div class="container">
+        <span class="text-eyebrow">The Proof</span>
+        <h1 class="text-hero-headline" style="margin-top: 8px;">Builds</h1>
+        <p class="text-body-lg" style="margin-top: 16px; max-width: 600px;">
+          A selection of things I've built, automated, and experimented with.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filters & Work Listing Section -->
+    <section class="section section-surface" style="padding-top: 32px;">
+      <div class="container">
+
+
+
+        <!-- Alternating Editorial Project List -->
+        <div class="project-list" id="project-list-wrapper">
+
+          <!-- 01. Intrusion Detection System (Security) -->
+          <article class="project-card" data-category="security" data-project-id="idps">
+            <div class="project-media-col">
+              <img src="assets/images/project1/img1.png" alt="Intrusion Detection & Prevention Stack Dashboard" />
+            </div>
+            <div class="project-info-col">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <span class="text-eyebrow">Security / Infrastructure</span>
+                <span class="text-mono">01 / 05</span>
+              </div>
+              <h3 class="text-project-title">Intrusion Detection &amp; Prevention Stack</h3>
+              <p class="text-body-md">
+                A Raspberry Pi-based machine-learning IDPS that combines Random Forest anomaly detection,
+                signature-based verification, real-time packet analysis, automated iptables mitigation, persistent
+                logging, and a Flask web dashboard to detect and block DoS attacks in SOHO networks.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center;">
+                <div class="stat-item" style="border-left-color: var(--color-gold);">
+                  <div class="stat-label">Exploits Blocked</div>
+                  <div class="text-metric">96%</div>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Raspberry Pi</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Scikit-learn</span>
+                <span class="project-tech-tag">Scapy</span>
+                <span class="project-tech-tag">Flask</span>
+                <span class="project-tech-tag">SQLite</span>
+                <span class="project-tech-tag">iptables</span>
+              </div>
+              <div style="margin-top: 8px;">
+                <button class="btn btn-secondary open-overlay-trigger" data-project="idps">Read Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02. SwiftLead (Web Application / Automation) - Text Left, Visual Right -->
+          <article class="project-card alternate" data-category="web-application automation"
+            data-project-id="swiftlead">
+            <div class="project-media-col">
+              <img src="assets/images/project2/swiftlead-poster.jpg" alt="SwiftLead Acquisition Engine" />
+            </div>
+            <div class="project-info-col">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <span class="text-eyebrow">Web Application / Automation</span>
+                <span class="text-mono">02 / 05</span>
+              </div>
+              <h3 class="text-project-title">SwiftLead Acquisition Engine</h3>
+              <p class="text-body-md">
+                Resolves the slow-lead leakage problem by implementing a real-time tracking backend that feeds marketing
+                pages. Built with high SEO fidelity and speed metrics.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center;">
+                <div class="stat-item" style="border-left-color: var(--color-gold);">
+                  <div class="stat-label">Lead Pipeline Time</div>
+                  <div class="text-metric">&lt; 1m</div>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">HTML5</span>
+                <span class="project-tech-tag">TailwindCSS</span>
+                <span class="project-tech-tag">JSON-LD</span>
+                <span class="project-tech-tag">Vite</span>
+              </div>
+              <div style="margin-top: 8px;">
+                <button class="btn btn-secondary open-overlay-trigger" data-project="swiftlead">Read Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03. IoT-Based Home Automation System (Mobile App / Enablement / IoT) -->
+          <article class="project-card" data-category="mobile iot" data-project-id="automation-stack">
+            <div class="project-media-col">
+              <img src="assets/images/project3/img1.jpg" alt="IoT-Based Home Automation System Interface" />
+            </div>
+            <div class="project-info-col">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <span class="text-eyebrow">Mobile App / Enablement / IoT</span>
+                <span class="text-mono">03 / 05</span>
+              </div>
+              <h3 class="text-project-title">IoT-Based Home Automation System</h3>
+              <p class="text-body-md">
+                An IoT-based home automation system that connects an Android mobile application to an Arduino-powered
+                hardware environment via Bluetooth, enabling appliance control, device monitoring, fire detection,
+                energy usage visualization, and administrative user management.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center;">
+                <div class="stat-item" style="border-left-color: var(--color-gold);">
+                  <div class="stat-label">Control Latency</div>
+                  <div class="text-metric">&lt; 1s</div>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Flutter</span>
+                <span class="project-tech-tag">Arduino R3</span>
+                <span class="project-tech-tag">Bluetooth</span>
+                <span class="project-tech-tag">Firebase</span>
+                <span class="project-tech-tag">Laravel</span>
+              </div>
+              <div style="margin-top: 8px;">
+                <button class="btn btn-secondary open-overlay-trigger" data-project="automation-stack">Read Case
+                  Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04. Mental Health Journal (Mobile) - Visual Left, Text Right -->
+          <article class="project-card" data-category="mobile" data-project-id="topwellness">
+            <div class="project-media-col">
+              <img src="assets/images/project4/img1.jpg" alt="Mental Health Journal Mobile Application Interface" />
+            </div>
+            <div class="project-info-col">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <span class="text-eyebrow">Mobile Application</span>
+                <span class="text-mono">04 / 05</span>
+              </div>
+              <h3 class="text-project-title">Mental Health Journal</h3>
+              <p class="text-body-md">
+                A cross-platform Flutter daily wellness app featuring a 6-step guided reflection flow, interactive 4-7-8
+                breathing pacer, psychometric assessment tracking, and reactive Riverpod state management.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center;">
+                <div class="stat-item" style="border-left-color: var(--color-gold);">
+                  <div class="stat-label">Daily Check-In</div>
+                  <div class="text-metric">&lt; 2m</div>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Flutter</span>
+                <span class="project-tech-tag">Dart</span>
+                <span class="project-tech-tag">Riverpod</span>
+                <span class="project-tech-tag">SharedPreferences</span>
+                <span class="project-tech-tag">Local Notifications</span>
+              </div>
+              <div style="margin-top: 8px;">
+                <button class="btn btn-secondary open-overlay-trigger" data-project="topwellness">Read Case
+                  Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05. DocXpress (Automation / Systems Integration) - Text Left, Visual Right -->
+          <article class="project-card alternate" data-category="automation" data-project-id="docxpress">
+            <div class="project-media-col">
+              <img src="assets/images/project5/img1.jpg" alt="DocXpress Automated Invoice Processing Pipeline" />
+            </div>
+            <div class="project-info-col">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <span class="text-eyebrow">Automation / Systems Integration</span>
+                <span class="text-mono">05 / 05</span>
+              </div>
+              <h3 class="text-project-title">DocXpress</h3>
+              <p class="text-body-md">
+                An autonomous invoice processing and accounts payable engine built on n8n. Ingests multi-format billing
+                attachments from email, applies AI/OCR structured extraction, enforces math and schema validations, and
+                prevents duplicate entries before syncing to Airtable and Slack.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center;">
+                <div class="stat-item" style="border-left-color: var(--color-gold);">
+                  <div class="stat-label">Turnaround Time</div>
+                  <div class="text-metric">&lt; 15s</div>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">n8n</span>
+                <span class="project-tech-tag">Airtable</span>
+                <span class="project-tech-tag">OpenRouter API</span>
+                <span class="project-tech-tag">Gmail API</span>
+                <span class="project-tech-tag">Slack API</span>
+              </div>
+              <div style="margin-top: 8px;">
+                <button class="btn btn-secondary open-overlay-trigger" data-project="docxpress">Read Case Study</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer style="padding: 24px 0;">
+    <div class="container"
+      style="display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center; text-align: center;">
+      <style>
+        @media (min-width: 768px) {
+          .footer-grid {
+            grid-template-columns: 1fr auto 1fr !important;
+            text-align: left !important;
+          }
+        }
+      </style>
+      <div class="footer-grid"
+        style="display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center; width: 100%;">
+        <!-- Left: Name -->
+        <div
+          style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; color: #FFFFFF; justify-self: start;">
+          SIDNEY NDUTI
+        </div>
+        <!-- Center: Nav links -->
+        <div style="display: flex; gap: 24px; justify-self: center; font-size: 0.9375rem; font-weight: 500;">
+          <a href="index.html" class="footer-social-link"
+            style="color: rgba(255,255,255,0.7); transition: color 0.2s;">Home</a>
+          <a href="build.html" class="footer-social-link"
+            style="color: rgba(255,255,255,0.7); transition: color 0.2s;">Builds</a>
+          <a href="contact.html" class="footer-social-link"
+            style="color: rgba(255,255,255,0.7); transition: color 0.2s;">Contact</a>
+        </div>
+        <!-- Right: Socials -->
+        <div style="display: flex; gap: 24px; justify-self: end; font-size: 0.9375rem; font-weight: 500;">
+          <a href="https://github.com/BlauerTon" target="_blank" rel="noopener" class="footer-social-link"
+            style="color: rgba(255,255,255,0.7); transition: color 0.2s;">GitHub</a>
+          <a href="https://www.linkedin.com/in/sidney-nduti/" target="_blank" rel="noopener" class="footer-social-link"
+            style="color: rgba(255,255,255,0.7); transition: color 0.2s;">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic Case Study Overlay Modal Container -->
+  <div class="overlay-backdrop" id="case-study-overlay" role="dialog" aria-modal="true"
+    aria-labelledby="modal-project-title">
+    <div class="overlay-container">
+
+      <!-- Modal Header -->
+      <div class="overlay-header">
+        <div>
+          <span class="text-eyebrow" id="modal-project-eyebrow">Category</span>
+          <h2 class="text-project-title" id="modal-project-title" style="margin-top: 4px;">Project Title</h2>
+        </div>
+        <button class="overlay-close" id="modal-close-trigger" aria-label="Close case study">
+          <span class="material-symbols-outlined" style="font-size: 28px;">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Content Area (Scrollable) -->
+      <div class="overlay-content">
+        <!-- Media Visual Banner -->
+        <div class="overlay-media" id="modal-project-media">
+          <div
+            style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background-color: var(--color-paper); color: var(--color-blue);">
+            <span class="material-symbols-outlined" style="font-size: 80px;">web</span>
+          </div>
+        </div>
+
+        <div class="overlay-grid">
+          <!-- Main Content (Descriptions) -->
+          <div class="overlay-main">
+            <div>
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">The Problem</h3>
+              <p class="text-body-md" id="modal-project-problem">Detailed description of the problem...</p>
+            </div>
+
+            <div>
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">The Build</h3>
+              <p class="text-body-md" id="modal-project-build">Detailed description of the build architecture and
+                approach...</p>
+            </div>
+
+            <div>
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">The Engineering Challenge</h3>
+              <p class="text-body-md" id="modal-project-challenge">Detailed explanation of the technical hurdle
+                solved...</p>
+            </div>
+
+            <div>
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">The Result</h3>
+              <p class="text-body-md" id="modal-project-result">Qualitative and quantitative metrics representing the
+                outcome...</p>
+            </div>
+          </div>
+
+          <!-- Sidebar (Meta fields) -->
+          <div class="overlay-sidebar">
+            <div class="sidebar-metadata-group">
+              <div class="sidebar-metadata-label">Outcome Metric</div>
+              <div class="text-metric" id="modal-project-metric">Value</div>
+            </div>
+
+            <div class="sidebar-metadata-group">
+              <div class="sidebar-metadata-label">Role</div>
+              <div class="sidebar-metadata-val" id="modal-project-role">Creator</div>
+            </div>
+
+            <div class="sidebar-metadata-group">
+              <div class="sidebar-metadata-label">Tech Stack</div>
+              <div class="project-tech-tags" id="modal-project-tech">
+                <!-- Stack labels injected here -->
+              </div>
+            </div>
+
+            <div class="sidebar-metadata-group" style="margin-top: 16px;">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-primary" id="modal-project-live-btn"
+                style="width: 100%;">View Live Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Nav controls -->
+      <div class="overlay-nav">
+        <button class="overlay-nav-btn" id="modal-prev-btn">
+          <span class="material-symbols-outlined">arrow_back</span>
+          Previous Build
+        </button>
+        <span class="overlay-position-indicator" id="modal-position-indicator">01 / 05</span>
+        <button class="overlay-nav-btn" id="modal-next-btn">
+          Next Build
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
