@@ -1139,6 +1139,58 @@ function handleDeepLink() {
   }
 }
 
+// Automations Page: Interactive Schema Tab Controller
+function initAutomationTabs() {
+  const tabContainers = document.querySelectorAll('.schema-tab-box');
+  if (!tabContainers.length) return;
+
+  tabContainers.forEach(container => {
+    const buttons = container.querySelectorAll('.schema-tab-btn');
+    const contents = container.querySelectorAll('.schema-tab-content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+
+        buttons.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetContent = container.querySelector(`#${targetId}`);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
+    });
+  });
+}
+
+// Automations Page: Category Filter Controller
+function initAutomationFilters() {
+  const filterBtns = document.querySelectorAll('.automation-filter-btn');
+  const cards = document.querySelectorAll('.automation-card');
+  if (!filterBtns.length || !cards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.style.display = 'block';
+          card.style.animation = 'fadeIn 0.3s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
 // Initialization of all controllers
 document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();
@@ -1146,4 +1198,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFilters();
   initOverlay();
   handleDeepLink();
+  initAutomationTabs();
+  initAutomationFilters();
 });
+
