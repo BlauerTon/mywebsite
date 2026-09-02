@@ -1151,3 +1151,392 @@ body.scroll-locked {
     transform: rotate(360deg);
   }
 }
+
+/* ==========================================================================
+   Automations Page & Workflow Component Styles
+   ========================================================================== */
+
+/* Explore Automations Banner on Builds Page */
+.explore-automations-banner {
+  margin-top: 64px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-ink-10);
+  border-radius: 12px;
+  padding: 48px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(11, 19, 37, 0.04);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.explore-automations-banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, var(--color-blue), var(--color-gold));
+}
+
+.explore-automations-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(11, 19, 37, 0.08);
+}
+
+@media (max-width: 768px) {
+  .explore-automations-banner {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+  }
+}
+
+/* Automation Filters Bar */
+.automation-filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.automation-filter-btn {
+  background: var(--color-surface);
+  border: 1px solid var(--color-ink-10);
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-ink-70);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.automation-filter-btn:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  background: var(--color-blue-10);
+}
+
+.automation-filter-btn.active {
+  background: var(--color-ink);
+  color: #FFFFFF;
+  border-color: var(--color-ink);
+}
+
+/* Automation Showcase Card */
+.automation-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-ink-10);
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 48px;
+  box-shadow: 0 2px 12px rgba(11, 19, 37, 0.03);
+  transition: box-shadow var(--transition-smooth);
+}
+
+@media (max-width: 640px) {
+  .automation-card {
+    padding: 24px 20px;
+  }
+}
+
+.automation-card:hover {
+  box-shadow: 0 8px 32px rgba(11, 19, 37, 0.06);
+}
+
+.automation-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-ink-10);
+  margin-bottom: 28px;
+}
+
+.automation-title-group h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.automation-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.badge-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.badge-pill-active {
+  background: #DCFCE7;
+  color: #166534;
+  border: 1px solid #BBF7D0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-pill-active::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22C55E;
+}
+
+.badge-pill-trigger {
+  background: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #DBEAFE;
+}
+
+.badge-pill-tier {
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+/* Visual Workflow Pipeline */
+.workflow-pipeline {
+  background: #0B1325;
+  border-radius: 10px;
+  padding: 24px 20px;
+  margin: 28px 0;
+  color: #FFFFFF;
+  overflow-x: auto;
+}
+
+.workflow-pipeline-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pipeline-nodes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: max-content;
+  padding-bottom: 8px;
+}
+
+.pipeline-node {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+  transition: all var(--transition-fast);
+}
+
+.pipeline-node:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.pipeline-node-icon {
+  font-size: 1.25rem;
+  color: var(--color-gold);
+}
+
+.pipeline-node-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.pipeline-node-type {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pipeline-connector {
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+
+/* Automation Details Grid */
+.automation-details-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .automation-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Technical Specification Table */
+.spec-table-box {
+  background: var(--color-paper);
+  border: 1px solid var(--color-ink-10);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.spec-table tr {
+  border-bottom: 1px solid var(--color-ink-10);
+}
+
+.spec-table tr:last-child {
+  border-bottom: none;
+}
+
+.spec-table td {
+  padding: 10px 8px;
+}
+
+.spec-table td.spec-label {
+  font-family: var(--font-mono);
+  color: var(--color-ink-70);
+  font-weight: 500;
+  width: 40%;
+}
+
+.spec-table td.spec-val {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+/* Code & Schema Tab Box */
+.schema-tab-box {
+  background: #0B1325;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.schema-tab-header {
+  display: flex;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+}
+
+.schema-tab-btn {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.schema-tab-btn:hover {
+  color: #FFFFFF;
+}
+
+.schema-tab-btn.active {
+  color: var(--color-gold);
+  border-bottom-color: var(--color-gold);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.schema-tab-content {
+  display: none;
+  padding: 16px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.schema-tab-content.active {
+  display: block;
+}
+
+.schema-code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #E2E8F0;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.schema-code .code-key {
+  color: #93C5FD;
+}
+
+.schema-code .code-str {
+  color: #86EFAC;
+}
+
+.schema-code .code-num {
+  color: #FDE047;
+}
+
+.schema-code .code-bool {
+  color: #F472B6;
+}
+
+/* Feature bullets list */
+.feature-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.feature-checklist li {
+  font-size: 0.9375rem;
+  color: var(--color-ink-70);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.feature-checklist li .check-icon {
+  color: var(--color-blue);
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+}

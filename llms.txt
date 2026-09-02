@@ -37,12 +37,35 @@ Sidney Nduti is a software engineer and systems architect based in Nairobi, Keny
 - **Description**: A wellness logging app utilizing Riverpod state providers. Optimizes multi-step slider/badge inputs and presents micro-animated recap charts.
 - **Outcome**: +42% daily reflection engagement.
 
-### 5. AI-Driven CV Tailoring Pipeline
-- **Role**: Automation Engineer
-- **Category**: Automation / Experiment
-- **Stack**: n8n, Airtable, OpenRouter API, NodeJS
-- **Description**: Workflow triggered by Airtable attachment hooks. Automates parsing candidates' CV text against targeted job posts and renders custom-tailored PDF files via LLMs in parallel.
-- **Outcome**: Generates custom tailored resumes in under 45 seconds.
+## Production Automations (n8n & AI Orchestration)
+See full technical details at: https://sidneynduti.me/automations.html
+
+### 1. SwiftLead — Tier 1 Starter (AI Lead Intake & Smart Routing)
+- **Engine**: n8n, OpenRouter (Nemotron 120B), Airtable, Gmail OAuth2
+- **Description**: Webhook-triggered pipeline validating inputs, generating atomic sequential IDs, classifying lead intent/urgency with LangChain LLMs, dynamically routing to agents with the least active workload, and firing dual personalized confirmation emails.
+- **Outcome**: < 4s end-to-end processing; sub-minute customer acknowledgement.
+
+### 2. SwiftLead — Tier 2 Professional (Slack SLA Watchdog & Escalation Engine)
+- **Engine**: n8n, Airtable Poller, Slack Web API
+- **Description**: Asynchronous watchdog monitoring response SLA. Sends initial Slack DM to assigned rep with lead details, enforces a 2-hour wait SLA, checks status, triggers an urgent reminder, and escalates to the Sales Manager if untouched after 3 hours.
+- **Outcome**: 100% SLA monitoring compliance; zero lead leakage.
+
+### 3. SwiftLead — Tier 3 Premium (Reporting & Dynamic HTML Dashboard)
+- **Engine**: n8n, Chart.js, Tailwind CDN, Airtable API
+- **Description**: Dual-trigger system delivering daily 24h cron email digests and rendering a self-contained responsive SPA executive dashboard via HTTP webhook with real-time intake velocity charts, AI intent distributions, agent capacity leaderboard, and CSV export.
+
+### 4. DocXpress — Autonomous Accounts Payable & Invoice Processing Pipeline
+- **Engine**: n8n, OpenRouter (Nemotron 3.5 Lightning), Airtable, Gmail, Slack
+- **Description**: Ingests invoice PDF attachments from email, validates against duplicate submissions in Airtable, extracts 10 structured financial fields via LLMs with strict JSON schemas and confidence scoring, and posts cross-platform receipts.
+- **Outcome**: < 15s invoice turnaround time; 95%+ extraction accuracy.
+
+### 5. ThreatPulse — Cyber Threat Intelligence & RSS Feed Syndication (rssfeed)
+- **Engine**: n8n, Google Sheets API, RSS Parser, Telegram Bot API
+- **Description**: Scheduled cron pipeline scraping authority cybersecurity feeds (The Hacker News, CVE databases), deduplicating articles against a persistent Google Sheets GUID registry, and broadcasting verified zero-day threat advisories to security teams.
+
+### 6. WebHook-Telegram Event Bridge
+- **Engine**: n8n, Telegram Bot API
+- **Description**: Event-driven webhook listener normalizing arbitrary JSON events and routing formatted alerts into Telegram channels with sub-second latency.
 
 ## Contact Channels
 - **Email**: sidneynduti@gmail.com
